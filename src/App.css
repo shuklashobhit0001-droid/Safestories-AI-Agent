@@ -89,7 +89,7 @@ body {
 .start-call-btn {
   width: 148px;
   height: 50px;
-  background: #112D2F;
+  background: #2c7679;
   border-radius: 100px;
   border: none;
   font-family: 'Poppins', sans-serif;
@@ -106,7 +106,7 @@ body {
 }
 
 .start-call-btn:hover {
-  background: #1a4447;
+  background: #3a9195;
 }
 
 .action-buttons {
@@ -172,11 +172,137 @@ body {
   color: #6E6E6E;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 768px) {
   .container {
     width: 100%;
-    height: auto;
+    height: 100vh;
     min-height: 100vh;
+    padding: 8px 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .blue-door,
+  .hero-bg {
+    display: none;
+  }
+
+  .logo {
+    position: relative;
+    left: 0;
+    top: 0;
+    margin: 0 auto 5px;
+    display: block;
+    width: 120px;
+    height: 48px;
+  }
+
+  .title {
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: 0;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 3px;
+  }
+
+  .subtitle {
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: 0;
+    margin-bottom: 5px;
+    font-size: 11px;
+    line-height: 16px;
+  }
+
+  .center-content {
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: none;
+    gap: 3px;
+    margin-bottom: 5px;
+  }
+
+  .our-value {
+    width: 110px;
+    height: 110px;
+  }
+
+  .start-call-btn {
+    margin-top: 0;
+    width: 130px;
+    height: 40px;
+    font-size: 13px;
+  }
+
+  .action-buttons {
+    position: relative;
+    width: calc(100% - 10px);
+    height: auto;
+    left: 0;
+    top: 0;
+    flex-direction: column;
+    padding: 10px;
+    gap: 8px;
+    margin: 0 auto 5px;
+  }
+
+  .btn {
+    width: 100% !important;
+    height: 38px;
+    font-size: 12px;
+  }
+
+  .footer {
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: 0;
+    margin-top: 5px;
+    padding-top: 0;
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+  .conversation-controls {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 0;
+  }
+
+  .end-call-btn {
+    width: 140px;
+    height: 45px;
+    font-size: 14px;
+  }
+
+  .chat-with-us-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    width: 130px;
+    height: 40px;
+    background: #25D366;
+    border-radius: 100px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin: 0 auto 5px;
+    position: relative;
+  }
+
+  .chat-with-us-btn:hover {
+    background: #20BA5A;
   }
 }
 
@@ -382,7 +508,7 @@ body {
 }
 
 .therapist-active {
-  background: #2D7579;
+  background: rgba(45, 117, 121, 0.22);
 }
 
 .therapist-inactive {
@@ -415,7 +541,7 @@ body {
 
 .therapist-active .therapist-info h3,
 .therapist-active .therapist-info p {
-  color: #FFFFFF;
+  color: #2D7579;
 }
 
 .therapist-inactive .therapist-info h3,
@@ -531,4 +657,130 @@ body {
   filter: grayscale(100%);
   cursor: not-allowed;
   pointer-events: none;
+}
+
+#aisensy-chat-widget {
+  bottom: 500px !important;
+}
+
+@media (max-width: 768px) {
+  #aisensy-chat-widget {
+    display: none !important;
+  }
+
+  .modal-content {
+    width: 90%;
+    max-width: 500px;
+    height: auto;
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: 30px 20px;
+  }
+
+  .modal-title {
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: 0;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  .modal-title-center {
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: 0;
+    margin-bottom: 20px;
+  }
+
+  .modal-close {
+    right: 20px;
+    top: 30px;
+    z-index: 10;
+  }
+
+  .therapy-option {
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: 0;
+    margin-bottom: 15px;
+    height: auto;
+    min-height: 100px;
+  }
+
+  .therapy-individual,
+  .therapy-couples,
+  .therapy-adolescent {
+    position: relative;
+    top: 0;
+    height: auto;
+    min-height: 100px;
+  }
+
+  .modal-therapists {
+    width: 90%;
+    max-width: 500px;
+    height: auto;
+    max-height: 90vh;
+    padding: 30px 20px;
+  }
+
+  .therapist-card {
+    position: relative;
+    width: 100%;
+    left: 0 !important;
+    top: 0 !important;
+    margin-bottom: 15px;
+    height: auto;
+    min-height: 100px;
+  }
+
+  .therapist-card:nth-child(2),
+  .therapist-card:nth-child(3),
+  .therapist-card:nth-child(4),
+  .therapist-card:nth-child(5),
+  .therapist-card:nth-child(6),
+  .therapist-card:nth-child(7) {
+    left: 0 !important;
+    top: 0 !important;
+  }
+
+  .therapist-single {
+    left: 0 !important;
+    top: 0 !important;
+  }
+
+  .go-back-btn {
+    position: relative;
+    left: 0;
+    top: 0;
+    margin: 20px auto 0;
+    display: block;
+  }
+
+  .therapist-info h3 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .therapist-info p {
+    font-size: 11px;
+    line-height: 16px;
+  }
+
+  .therapy-text h3 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .therapy-text p {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+
+.chat-with-us-btn {
+  display: none;
 }

@@ -26,11 +26,11 @@ const Loader = () => {
 
 const StyledWrapper = styled.div`
   .loader {
-    --color-one: #2D7579;
-    --color-two: #1a4447;
-    --color-three: #2D757980;
-    --color-four: #1a444780;
-    --color-five: #2D757940;
+    --color-one: #f2a937;
+    --color-two: #c88a2a;
+    --color-three: #f2a93780;
+    --color-four: #c88a2a80;
+    --color-five: #f2a93740;
     --time-animation: 3s;
     --size: 1.5;
     position: relative;
@@ -39,7 +39,7 @@ const StyledWrapper = styled.div`
     box-shadow:
       0 0 25px 0 var(--color-three),
       0 20px 50px 0 var(--color-four);
-    animation: colorize calc(var(--time-animation) * 3) ease-in-out infinite;
+
   }
 
   .loader::before {
