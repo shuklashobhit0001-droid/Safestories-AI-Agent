@@ -1,0 +1,534 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  position: relative;
+  width: 1280px;
+  height: 832px;
+  margin: 0 auto;
+  background: #FFFFFF;
+  overflow: hidden;
+}
+
+.logo {
+  position: absolute;
+  width: 158px;
+  height: 63px;
+  left: calc(50% - 79px);
+  top: 41px;
+}
+
+.blue-door {
+  position: absolute;
+  width: 270px;
+  height: 540px;
+  left: -17px;
+  top: 150px;
+}
+
+.hero-bg {
+  position: absolute;
+  width: 150px;
+  height: 400px;
+  right: 0;
+  top: 180px;
+  object-fit: cover;
+  object-position: left center;
+}
+
+.title {
+  position: absolute;
+  width: 395px;
+  left: calc(50% - 197.5px);
+  top: 164px;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 34px;
+  color: #000000;
+  text-align: center;
+}
+
+.subtitle {
+  position: absolute;
+  width: 323px;
+  left: calc(50% - 161.5px);
+  top: 199px;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+  color: #6E6E6E;
+}
+
+.center-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 130px;
+}
+
+.our-value {
+  width: 400px;
+  height: 400px;
+  object-fit: contain;
+}
+
+.start-call-btn {
+  width: 148px;
+  height: 50px;
+  background: #112D2F;
+  border-radius: 100px;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background 0.3s;
+  margin-top: -50px;
+}
+
+.start-call-btn:hover {
+  background: #1a4447;
+}
+
+.action-buttons {
+  position: absolute;
+  width: 650px;
+  height: 91px;
+  left: calc(50% - 325px);
+  top: 638px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  padding: 0 22px;
+  gap: 14px;
+}
+
+.btn {
+  height: 50px;
+  border-radius: 100px;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: opacity 0.3s;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn-schedule {
+  width: 207px;
+  background: #2D7579;
+  color: #FFFFFF;
+}
+
+.btn-consultation {
+  width: 255px;
+  background: #F1A937;
+  color: #000000;
+}
+
+.btn-home {
+  width: 116px;
+  background: #DEDEDE;
+  color: #000000;
+}
+
+.footer {
+  position: absolute;
+  width: 242px;
+  left: calc(50% - 121px);
+  top: 779px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+  color: #6E6E6E;
+}
+
+@media (max-width: 1280px) {
+  .container {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+  }
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  position: relative;
+  width: 459px;
+  height: 619px;
+  background: #FFFFFF;
+  border-radius: 30px;
+  padding: 40px 39px;
+}
+
+.modal-close {
+  position: absolute;
+  right: 24px;
+  top: 42px;
+  width: 24px;
+  height: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.modal-title {
+  position: absolute;
+  width: 186px;
+  left: calc(50% - 186px/2 - 97.5px);
+  top: 40px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  color: #2D7579;
+  margin: 0;
+}
+
+.therapy-option:hover {
+  transform: scale(1.02);
+}
+
+.therapy-individual {
+  height: 127px;
+  top: 93px;
+  background: #2D7579;
+}
+
+.therapy-couples {
+  height: 153px;
+  top: 237px;
+  background: #F1A937;
+}
+
+.therapy-adolescent {
+  height: 172px;
+  top: 407px;
+  background: rgba(45, 117, 121, 0.22);
+}
+
+.therapy-icon {
+  width: 70px;
+  height: 70px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.therapy-couples .therapy-icon {
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
+.therapy-adolescent .therapy-icon {
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
+.therapy-option {
+  position: absolute;
+  width: 382px;
+  left: 39px;
+  border-radius: 12px;
+  padding: 25px 19px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.therapy-text {
+  flex: 1;
+}
+
+.therapy-text h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  margin: 0 0 6px 0;
+}
+
+.therapy-individual .therapy-text h3,
+.therapy-individual .therapy-text p {
+  color: #FFFFFF;
+}
+
+.therapy-couples .therapy-text h3,
+.therapy-couples .therapy-text p,
+.therapy-adolescent .therapy-text h3,
+.therapy-adolescent .therapy-text p {
+  color: #000000;
+}
+
+.therapy-text p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+  margin: 0;
+}
+
+.modal-therapists {
+  width: 943px;
+  height: 619px;
+  padding: 40px 38px;
+}
+
+.modal-title-center {
+  position: absolute;
+  width: 224px;
+  left: calc(50% - 112px);
+  top: 40px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #2D7579;
+  margin: 0;
+  text-align: center;
+}
+
+.therapist-card {
+  position: absolute;
+  width: 416px;
+  height: 116px;
+  border-radius: 12px;
+  padding: 16px 20px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.therapist-card:hover {
+  transform: scale(1.02);
+}
+
+.therapist-card:nth-child(2) {
+  left: 38px;
+  top: 109px;
+}
+
+.therapist-card:nth-child(3) {
+  left: 490px;
+  top: 109px;
+}
+
+.therapist-card:nth-child(4) {
+  left: 38px;
+  top: 252px;
+}
+
+.therapist-card:nth-child(5) {
+  left: 490px;
+  top: 252px;
+}
+
+.therapist-card:nth-child(6) {
+  left: 38px;
+  top: 395px;
+}
+
+.therapist-card:nth-child(7) {
+  left: 490px;
+  top: 395px;
+}
+
+.therapist-active {
+  background: #2D7579;
+}
+
+.therapist-inactive {
+  background: rgba(45, 117, 121, 0.22);
+}
+
+.therapist-avatar {
+  width: 83px;
+  height: 83px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.therapist-avatar-alt {
+  background: #2D7579;
+}
+
+.therapist-info {
+  flex: 1;
+}
+
+.therapist-info h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  margin: 7px 0 4px 0;
+}
+
+.therapist-active .therapist-info h3,
+.therapist-active .therapist-info p {
+  color: #FFFFFF;
+}
+
+.therapist-inactive .therapist-info h3,
+.therapist-inactive .therapist-info p {
+  color: #2D7579;
+}
+
+.therapist-info p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  margin: 0;
+}
+
+.go-back-btn {
+  position: absolute;
+  width: 110px;
+  height: 50px;
+  left: calc(50% - 55px);
+  top: 537px;
+  background: #000000;
+  border-radius: 100px;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.go-back-btn:hover {
+  opacity: 0.8;
+}
+
+.therapist-single {
+  left: 265px !important;
+  top: 244px !important;
+  background: rgba(45, 117, 121, 0.22);
+}
+
+.therapist-single .therapist-info h3,
+.therapist-single .therapist-info p {
+  color: #2D7579;
+}
+
+.connecting-btn {
+  cursor: default;
+  opacity: 0.8;
+}
+
+.conversation-controls {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: -30px;
+}
+
+.end-call-btn {
+  width: 200px;
+  height: 50px;
+  background: #DC2626;
+  border-radius: 100px;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background 0.3s;
+}
+
+.end-call-btn:hover {
+  background: #B91C1C;
+}
+
+.agent-speaking {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: #112D2F;
+  white-space: nowrap;
+}
+
+.dots::after {
+  content: '';
+  animation: dots 1.5s steps(4, end) infinite;
+}
+
+@keyframes dots {
+  0%, 20% {
+    content: '';
+  }
+  40% {
+    content: '.';
+  }
+  60% {
+    content: '..';
+  }
+  80%, 100% {
+    content: '...';
+  }
+}
+
+.therapist-card.disabled {
+  opacity: 0.5;
+  filter: grayscale(100%);
+  cursor: not-allowed;
+  pointer-events: none;
+}
