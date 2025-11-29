@@ -111,9 +111,9 @@ body {
 
 .action-buttons {
   position: absolute;
-  width: 650px;
+  width: 792px;
   height: 91px;
-  left: calc(50% - 325px);
+  left: calc(50% - 396px);
   top: 638px;
   border: 2px solid rgba(0, 0, 0, 0.1);
   border-radius: 100px;
@@ -143,13 +143,13 @@ body {
 }
 
 .btn-schedule {
-  width: 207px;
+  width: 230px;
   background: #2D7579;
   color: #FFFFFF;
 }
 
 .btn-consultation {
-  width: 255px;
+  width: 208px;
   background: #F1A937;
   color: #000000;
 }
@@ -160,16 +160,23 @@ body {
   color: #000000;
 }
 
+.btn-whatsapp {
+  width: 166px;
+  background: #24AB02;
+  color: #FFFFFF;
+}
+
 .footer {
   position: absolute;
-  width: 242px;
-  left: calc(50% - 121px);
+  width: 600px;
+  left: calc(50% - 300px);
   top: 779px;
   font-weight: 500;
   font-size: 13px;
   line-height: 20px;
   text-align: center;
   color: #6E6E6E;
+  white-space: nowrap;
 }
 
 @media (max-width: 768px) {
@@ -177,11 +184,10 @@ body {
     width: 100%;
     height: 100vh;
     min-height: 100vh;
-    padding: 8px 15px;
-    overflow: hidden;
+    padding: 15px;
+    overflow-y: auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
   }
 
   .blue-door,
@@ -193,7 +199,7 @@ body {
     position: relative;
     left: 0;
     top: 0;
-    margin: 0 auto 5px;
+    margin: 80px auto 5px;
     display: block;
     width: 120px;
     height: 48px;
@@ -204,9 +210,10 @@ body {
     width: 100%;
     left: 0;
     top: 0;
-    font-size: 16px;
-    line-height: 24px;
-    margin-bottom: 3px;
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 60px;
+    margin-bottom: 8px;
   }
 
   .subtitle {
@@ -214,9 +221,9 @@ body {
     width: 100%;
     left: 0;
     top: 0;
-    margin-bottom: 5px;
-    font-size: 11px;
-    line-height: 16px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    line-height: 18px;
   }
 
   .center-content {
@@ -224,38 +231,94 @@ body {
     left: 0;
     top: 0;
     transform: none;
-    gap: 3px;
-    margin-bottom: 5px;
+    gap: 110px;
+    margin-bottom: 20px;
+    flex: 1;
+    justify-content: center;
   }
 
   .our-value {
-    width: 110px;
-    height: 110px;
+    width: 200px;
+    height: 200px;
   }
 
   .start-call-btn {
     margin-top: 0;
-    width: 130px;
-    height: 40px;
-    font-size: 13px;
+    width: 150px;
+    height: 45px;
+    font-size: 14px;
+  }
+
+  .connecting-btn {
+    cursor: default;
   }
 
   .action-buttons {
     position: relative;
-    width: calc(100% - 10px);
-    height: auto;
+    width: 100%;
+    max-width: 353px;
+    height: 70px;
     left: 0;
     top: 0;
-    flex-direction: column;
-    padding: 10px;
-    gap: 8px;
-    margin: 0 auto 5px;
+    flex-direction: row;
+    padding: 0 10px;
+    gap: 0;
+    margin: -80px auto 15px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 35px;
+    justify-content: space-between;
   }
 
   .btn {
-    width: 100% !important;
-    height: 38px;
-    font-size: 12px;
+    width: auto !important;
+    height: auto !important;
+    font-size: 11px;
+    flex-direction: column;
+    padding: 8px 5px;
+    background: transparent !important;
+    color: #2D7579 !important;
+    gap: 4px;
+    flex: 1;
+    white-space: nowrap;
+  }
+
+  .btn svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .btn-home svg path {
+    fill: #2D7579;
+  }
+
+  .btn-consultation svg path {
+    stroke: #2D7579;
+  }
+
+  .btn-schedule svg path {
+    stroke: #2D7579;
+  }
+
+  .btn-whatsapp svg path {
+    fill: #2D7579;
+  }
+
+  .btn-schedule {
+    font-size: 0;
+  }
+
+  .btn-consultation {
+    font-size: 0;
+  }
+
+  .btn-schedule::after {
+    content: 'Book Session';
+    font-size: 11px;
+  }
+
+  .btn-consultation::after {
+    content: 'Free Call';
+    font-size: 11px;
   }
 
   .footer {
@@ -263,10 +326,11 @@ body {
     width: 100%;
     left: 0;
     top: 0;
-    margin-top: 5px;
-    padding-top: 0;
-    font-size: 10px;
-    line-height: 14px;
+    margin-top: auto;
+    padding: 10px 0;
+    font-size: 9px;
+    line-height: 13px;
+    white-space: normal;
   }
 
   .conversation-controls {
@@ -276,33 +340,13 @@ body {
   }
 
   .end-call-btn {
-    width: 140px;
+    width: 180px;
     height: 45px;
     font-size: 14px;
   }
 
-  .chat-with-us-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 6px;
-    width: 130px;
-    height: 40px;
-    background: #25D366;
-    border-radius: 100px;
-    border: none;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 13px;
-    color: #FFFFFF;
-    cursor: pointer;
-    transition: background 0.3s;
-    margin: 0 auto 5px;
-    position: relative;
-  }
-
-  .chat-with-us-btn:hover {
-    background: #20BA5A;
+  .agent-speaking {
+    font-size: 14px;
   }
 }
 
@@ -326,6 +370,14 @@ body {
   background: #FFFFFF;
   border-radius: 30px;
   padding: 40px 39px;
+}
+
+.modal-iframe {
+  width: 90%;
+  max-width: 1000px;
+  height: 90vh;
+  padding: 0;
+  overflow: hidden;
 }
 
 .modal-close {
