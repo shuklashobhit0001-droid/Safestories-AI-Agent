@@ -238,9 +238,9 @@ body {
   }
 
   .our-value {
-    width: 150px;
-    height: 150px;
-    margin-top: -60px;
+    width: 180px;
+    height: 180px;
+    margin-top: -20px;
   }
 
   .start-call-btn {
@@ -264,7 +264,7 @@ body {
     flex-direction: row;
     padding: 0 10px;
     gap: 0;
-    margin: -80px auto 15px;
+    margin: -20px auto 15px;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 35px;
     justify-content: space-between;
@@ -337,13 +337,14 @@ body {
   .conversation-controls {
     flex-direction: column;
     gap: 10px;
-    margin-top: 0;
+    margin-top: 40px;
   }
 
   .end-call-btn {
     width: 180px;
     height: 45px;
     font-size: 14px;
+    margin-top: 40px;
   }
 
   .agent-speaking {
