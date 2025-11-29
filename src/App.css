@@ -221,7 +221,7 @@ body {
     width: 100%;
     left: 0;
     top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     font-size: 12px;
     line-height: 18px;
   }
@@ -229,9 +229,9 @@ body {
   .center-content {
     position: relative;
     left: 0;
-    top: 0;
+    top: 0px;
     transform: none;
-    gap: 20px;
+    gap: 10px;
     margin-bottom: 20px;
     flex: 1;
     justify-content: center;
@@ -240,6 +240,7 @@ body {
   .our-value {
     width: 150px;
     height: 150px;
+    margin-top: -60px;
   }
 
   .start-call-btn {
