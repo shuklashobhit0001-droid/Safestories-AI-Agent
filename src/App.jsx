@@ -1,7 +1,6 @@
 import './App.css'
 import { useState, useEffect } from 'react'
 import { useConversation } from '@elevenlabs/react'
-import Loader from './Loader'
 import { IMAGE_URLS } from './imageConfig'
 
 function App() {
@@ -38,7 +37,7 @@ function App() {
       <p className="subtitle">Always here for your Mental Health</p>
       
       <div className="center-content">
-        <Loader />
+        <img src="https://storage.googleapis.com/safestories-images/AI%20Animation%20SafeStories.gif" alt="AI Animation" className="our-value" />
         
         {conversationState === 'idle' && (
           <button className="start-call-btn" onClick={async () => {
