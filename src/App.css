@@ -81,8 +81,8 @@ body {
 }
 
 .our-value {
-  width: 400px;
-  height: 400px;
+  width: 200px;
+  height: 200px;
   object-fit: contain;
 }
 
@@ -238,8 +238,8 @@ body {
   }
 
   .our-value {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
   }
 
   .start-call-btn {
