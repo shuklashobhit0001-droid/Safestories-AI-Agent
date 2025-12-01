@@ -30,12 +30,14 @@ function App() {
 
   useEffect(() => {
     const handleLoad = () => {
+      const isMobile = window.innerWidth <= 768;
+      const timeout = isMobile ? 5000 : 7000;
       setTimeout(() => {
         setFadeOut(true);
         setTimeout(() => {
           setLoading(false);
         }, 1000);
-      }, 7000);
+      }, timeout);
     };
     
     if (document.readyState === 'complete') {
