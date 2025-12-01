@@ -29,24 +29,17 @@ function App() {
   })
 
   useEffect(() => {
-    const handleLoad = () => {
-      const isMobile = window.innerWidth <= 768;
-      const timeout = isMobile ? 5000 : 7000;
+    const isMobile = window.innerWidth <= 768;
+    const timeout = isMobile ? 6000 : 7000;
+    
+    const timer = setTimeout(() => {
+      setFadeOut(true);
       setTimeout(() => {
-        setFadeOut(true);
-        setTimeout(() => {
-          setLoading(false);
-        }, 1000);
-      }, timeout);
-    };
+        setLoading(false);
+      }, 1000);
+    }, timeout);
     
-    if (document.readyState === 'complete') {
-      handleLoad();
-    } else {
-      window.addEventListener('load', handleLoad);
-    }
-    
-    return () => window.removeEventListener('load', handleLoad);
+    return () => clearTimeout(timer);
   }, []);
 
   return (
