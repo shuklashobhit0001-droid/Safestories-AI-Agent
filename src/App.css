@@ -725,6 +725,17 @@ body {
 }
 
 @media (max-width: 768px) {
+  .loader-container {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .loader-gif {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
   #aisensy-chat-widget {
     display: none !important;
   }
