@@ -307,6 +307,10 @@ body {
     fill: #2D7579;
   }
 
+  .btn-whatsapp {
+    padding-top: 12px;
+  }
+
   .btn-schedule {
     font-size: 0;
   }
