@@ -4,6 +4,8 @@ import { useConversation } from '@elevenlabs/react'
 import { IMAGE_URLS } from './imageConfig'
 
 function App() {
+  const [loading, setLoading] = useState(true)
+  const [fadeOut, setFadeOut] = useState(false)
   const [showScheduleModal, setShowScheduleModal] = useState(false)
   const [showIndividualModal, setShowIndividualModal] = useState(false)
   const [showCouplesModal, setShowCouplesModal] = useState(false)
@@ -26,9 +28,33 @@ function App() {
     }
   })
 
-
+  useEffect(() => {
+    const handleLoad = () => {
+      setTimeout(() => {
+        setFadeOut(true);
+        setTimeout(() => {
+          setLoading(false);
+        }, 1000);
+      }, 6000);
+    };
+    
+    if (document.readyState === 'complete') {
+      handleLoad();
+    } else {
+      window.addEventListener('load', handleLoad);
+    }
+    
+    return () => window.removeEventListener('load', handleLoad);
+  }, []);
 
   return (
+    <>
+      {loading && (
+        <div className={`loader-container ${fadeOut ? 'fade-out' : ''}`}>
+          <img src={IMAGE_URLS.loader} alt="SafeStories Loading" className="loader-gif" />
+        </div>
+      )}
+      {!loading && (
     <div className="container">
       <img src={IMAGE_URLS.logo} alt="SafeStories Logo" className="logo" />
       <img src={IMAGE_URLS.door} alt="Blue Door" className="blue-door" />
@@ -335,6 +361,8 @@ function App() {
         </div>
       )}
     </div>
+    )}
+    </>
   )
 }
 
