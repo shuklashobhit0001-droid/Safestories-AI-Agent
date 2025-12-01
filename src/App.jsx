@@ -35,7 +35,7 @@ function App() {
         setTimeout(() => {
           setLoading(false);
         }, 1000);
-      }, 6000);
+      }, 7000);
     };
     
     if (document.readyState === 'complete') {
