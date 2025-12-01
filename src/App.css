@@ -278,14 +278,17 @@ body {
     padding: 8px 5px;
     background: transparent !important;
     color: #2D7579 !important;
-    gap: 4px;
+    gap: 2px;
     flex: 1;
     white-space: nowrap;
+    align-items: center;
+    justify-content: center;
   }
 
   .btn svg {
     width: 28px;
     height: 28px;
+    margin-bottom: 2px;
   }
 
   .btn-home svg path {
