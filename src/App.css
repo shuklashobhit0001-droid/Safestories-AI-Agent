@@ -110,8 +110,8 @@ body {
 }
 
 .start-call-btn {
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   background: #2D7579;
   border: 15px solid rgba(45, 117, 121, 0.22);
   border-radius: 100px;
@@ -126,6 +126,16 @@ body {
   transition: background 0.3s;
   margin-top: 0;
   box-shadow: 0 0 0 20px rgba(135, 206, 235, 0.5);
+  animation: breathe 2s ease-in-out infinite;
+}
+
+@keyframes breathe {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
 }
 
 .start-call-btn:hover {
