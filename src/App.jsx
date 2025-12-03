@@ -36,7 +36,7 @@ function App() {
       setFadeOut(true);
       setTimeout(() => {
         setLoading(false);
-      }, 1000);
+      }, 800);
     }, timeout);
     
     return () => clearTimeout(timer);

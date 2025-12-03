@@ -8,6 +8,8 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  background: url('https://storage.googleapis.com/safetories-images/3518ee75c9bef26ebb58051ccd7311bff6e24ec0.jpg') no-repeat center center fixed;
+  background-size: cover;
 }
 
 .container {
@@ -19,6 +21,16 @@ body {
   background: url('https://storage.googleapis.com/safetories-images/3518ee75c9bef26ebb58051ccd7311bff6e24ec0.jpg') no-repeat center center;
   background-size: cover;
   overflow-y: auto;
+  animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .logo {
@@ -137,6 +149,31 @@ body {
   50% {
     transform: scale(1.05);
   }
+}
+
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url('https://storage.googleapis.com/safetories-images/3518ee75c9bef26ebb58051ccd7311bff6e24ec0.jpg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: opacity 0.8s ease-out;
+}
+
+.loader-container.fade-out {
+  opacity: 0;
+}
+
+.loader-gif {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
 
 .start-call-btn:hover {
