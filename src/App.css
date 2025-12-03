@@ -284,10 +284,18 @@ body {
     left: 0;
     top: 0;
     margin: 30px auto 5px;
-    display: block;
-    width: 180px;
-    height: 70px;
-    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 65px;
+    padding: 10px;
+  }
+
+  .logo img {
+    width: 75% !important;
+    height: auto !important;
+    object-fit: contain;
   }
 
   .title {
