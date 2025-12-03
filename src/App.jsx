@@ -55,32 +55,29 @@ function App() {
       <img src={IMAGE_URLS.door} alt="Blue Door" className="blue-door" />
       
       <div className="center-content">
-        {conversationState === 'idle' && (
-          <button className="start-call-btn" onClick={async () => {
+        <p className="welcome-text">Namaste! <span className="highlight-text">Welcome to SafeStories.</span> I'm Anika. How can I help you today?</p>
+        <button className="start-call-btn" onClick={async () => {
+          if (conversationState === 'idle') {
             try {
               setConversationState('connecting');
-              await conversation.startSession({ agentId: 'agent_6501kbcnx6kxfqq97w2ya3f1c5pd' });
+              await conversation.startSession({ agentId: 'agent_9601kbhttzt8exrawcshksct5ka8' });
             } catch (error) {
               console.error('Failed to start conversation:', error);
               setConversationState('idle');
             }
-          }}>
-            <svg width="49" height="58" viewBox="0 0 49 58" fill="none">
-              <path d="M24.42 31.93C28.5 31.93 31.82 28.61 31.82 24.53V12.27C31.82 8.19 28.5 4.87 24.42 4.87C20.34 4.87 17.02 8.19 17.02 12.27V24.53C17.02 28.61 20.34 31.93 24.42 31.93Z" fill="white"/>
-              <path d="M38.22 24.53C38.22 32.89 31.5 39.61 23.14 39.61C14.78 39.61 8.06 32.89 8.06 24.53H3.66C3.66 34.77 11.26 43.25 21.14 44.69V52.13H25.54V44.69C35.42 43.25 43.02 34.77 43.02 24.53H38.22Z" fill="white" opacity="0.4"/>
-            </svg>
-            Talk to Anika
-          </button>
+          }
+        }}>
+          <svg width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path opacity="0.4" d="M56.1079 28.2264C54.5718 28.2264 53.3251 29.4549 53.3251 30.9746C53.3251 41.2391 44.868 49.5909 34.474 49.5909C24.0773 49.5909 15.6202 41.2391 15.6202 30.9746C15.6202 29.4549 14.3734 28.2264 12.8373 28.2264C11.3012 28.2264 10.0544 29.4549 10.0544 30.9746C10.0544 43.3415 19.5329 53.551 31.6912 54.9224V60.4517C31.6912 61.9688 32.9351 63.1999 34.474 63.1999C36.0102 63.1999 37.2569 61.9688 37.2569 60.4517V54.9224C49.4124 53.551 58.8908 43.3415 58.8908 30.9746C58.8908 29.4549 57.6441 28.2264 56.1079 28.2264" fill="white"/>
+            <path d="M33.9689 43.7145H34.9763C41.8777 43.7145 47.4768 38.1879 47.4768 31.3724V18.0904C47.4768 11.2694 41.8777 5.74548 34.9763 5.74548H33.9689C27.0674 5.74548 21.4683 11.2694 21.4683 18.0904V31.3724C21.4683 38.1879 27.0674 43.7145 33.9689 43.7145" fill="white"/>
+          </svg>
+        </button>
+        {conversationState === 'idle' && (
+          <span className="talk-to-anika-text">Talk to Anika</span>
         )}
         
         {conversationState === 'connecting' && (
-          <button className="start-call-btn connecting-btn">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-              <path d="M12 15C13.66 15 15 13.66 15 12V6C15 4.34 13.66 3 12 3C10.34 3 9 4.34 9 6V12C9 13.66 10.34 15 12 15Z" fill="white"/>
-              <path d="M17 12C17 14.76 14.76 17 12 17C9.24 17 7 14.76 7 12H5C5 15.53 7.61 18.43 11 18.92V21H13V18.92C16.39 18.43 19 15.53 19 12H17Z" fill="white" opacity="0.4"/>
-            </svg>
-            Connecting...
-          </button>
+          <span className="talk-to-anika-text">Connecting...</span>
         )}
         
         {conversationState === 'connected' && (
@@ -96,6 +93,14 @@ function App() {
               End Conversation
             </button>
             <span className="agent-speaking">Agent is speaking...</span>
+          </div>
+        )}
+        
+        {conversationState === 'connected' && (
+          <div className="suggestions-container">
+            <div className="suggestion-chip">Ask, "How can I book a session?"</div>
+            <div className="suggestion-chip">Ask, "What is Therapy?"</div>
+            <div className="suggestion-chip">Ask, "I want to know more about SafeStories"</div>
           </div>
         )}
       </div>
@@ -159,6 +164,9 @@ function App() {
       </div>
 
       
+      <div className="footer-links">
+        <a href="https://safestories.in/privacy-policy" target="_blank" rel="noopener noreferrer">Privacy Policy</a> | <a href="https://safestories.in/tnc" target="_blank" rel="noopener noreferrer">Terms & Conditions</a>
+      </div>
       <footer className="footer">©️ 2025 SafeStories, SAFETY AND YOU WELLBEING CENTRE LLP. All Rights Reserved!</footer>
 
       {showAdolescentModal && (
