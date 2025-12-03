@@ -55,8 +55,6 @@ function App() {
       <img src={IMAGE_URLS.door} alt="Blue Door" className="blue-door" />
       
       <div className="center-content">
-        <img src="https://storage.googleapis.com/safetories-images/AI%20Animation%20SafeStories.gif" alt="AI Animation" className="our-value" />
-        
         {conversationState === 'idle' && (
           <button className="start-call-btn" onClick={async () => {
             try {
