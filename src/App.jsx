@@ -54,9 +54,6 @@ function App() {
       <img src={IMAGE_URLS.logo} alt="SafeStories Logo" className="logo" />
       <img src={IMAGE_URLS.door} alt="Blue Door" className="blue-door" />
       
-      <h1 className="title">Welcome to SafeStories AI Agent!</h1>
-      <p className="subtitle">Always here for your Mental Health</p>
-      
       <div className="center-content">
         <img src="https://storage.googleapis.com/safetories-images/AI%20Animation%20SafeStories.gif" alt="AI Animation" className="our-value" />
         
