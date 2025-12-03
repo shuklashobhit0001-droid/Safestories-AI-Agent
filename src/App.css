@@ -325,7 +325,7 @@ body {
   }
 
   .btn-consultation::after {
-    content: 'Free Call';
+    content: 'Free Session';
     font-size: 11px;
   }
 
