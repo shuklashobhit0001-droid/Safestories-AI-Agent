@@ -14,10 +14,11 @@ body {
   position: relative;
   width: 100vw;
   height: 100vh;
+  min-height: 850px;
   margin: 0;
   background: url('https://storage.googleapis.com/safetories-images/3518ee75c9bef26ebb58051ccd7311bff6e24ec0.jpg') no-repeat center center;
   background-size: cover;
-  overflow: hidden;
+  overflow-y: auto;
 }
 
 .logo {
