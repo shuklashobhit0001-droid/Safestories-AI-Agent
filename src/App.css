@@ -52,10 +52,10 @@ body {
 
 .blue-door {
   position: absolute;
-  width: 330px;
-  height: 600px;
+  width: 300px;
+  height: 550px;
   left: 110px;
-  top: 200px;
+  top: 140px;
 }
 
 .hero-bg {
@@ -142,7 +142,7 @@ body {
   width: 792px;
   height: 91px;
   left: calc(50% - 396px);
-  top: 730px;
+  top: 680px;
   border: 2px solid rgba(0, 0, 0, 0.1);
   border-radius: 100px;
   display: flex;
@@ -198,7 +198,7 @@ body {
   position: absolute;
   width: 600px;
   left: 80px;
-  top: 880px;
+  top: 785px;
   font-weight: 500;
   font-size: 13px;
   line-height: 20px;
@@ -968,7 +968,7 @@ body {
   width: 234px;
   height: 20px;
   right: 80px;
-  top: 880px;
+  top: 785px;
   font-family: 'Poppins';
   font-weight: 700;
   font-size: 13px;
