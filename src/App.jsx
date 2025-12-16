@@ -4,7 +4,7 @@ import { useConversation } from '@elevenlabs/react'
 import { IMAGE_URLS } from './imageConfig'
 
 function App() {
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(false)
   const [fadeOut, setFadeOut] = useState(false)
   const [showScheduleModal, setShowScheduleModal] = useState(false)
   const [showIndividualModal, setShowIndividualModal] = useState(false)
