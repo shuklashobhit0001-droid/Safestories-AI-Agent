@@ -1,17 +1,12 @@
-// Image URLs from cloud storage
-// If public access is blocked, you need to:
-// 1. Use signed URLs (temporary access)
-// 2. OR use a different bucket without public access prevention
-// 3. OR use a different service like Cloudinary (free tier available)
-
+// Image URLs from Cloudinary
 export const IMAGE_URLS = {
-  logo: 'https://storage.googleapis.com/safetories-images/safestories%20logo.png',
-  door: 'https://storage.googleapis.com/safetories-images/bluedoor%201.png',
-  loader: 'https://storage.googleapis.com/safetories-images/Loader%20for%20SafeStories%20Agent.gif',
-  anjali_pillai: 'https://storage.googleapis.com/safetories-images/Anjali%20Pillai.png',
-  ishika_mahajan: 'https://storage.googleapis.com/safetories-images/Ishika%20Mahajan.png',
-  aastha_yagnik: 'https://storage.googleapis.com/safetories-images/Aastha%20Yagnik.jpeg',
-  indrayani_hinge: 'https://storage.googleapis.com/safetories-images/Indrayani%20Hinge.png',
-  ambika_vaidya: 'https://storage.googleapis.com/safetories-images/Ambika%20Vaidya.jpeg',
-  muskan_negi: 'https://storage.googleapis.com/safetories-images/Muskan%20Negi.jpg',
+  logo: 'https://res.cloudinary.com/dynby5w8f/image/upload/v1765863540/safestories_logo_vxywxv.webp',
+  door: 'https://res.cloudinary.com/dynby5w8f/image/upload/v1765863541/bluedoor_1_gkkqvv.webp',
+  loader: 'http://72.60.103.151:9100/safestories-bucket/loader.gif',
+  anjali_pillai: 'https://res.cloudinary.com/dynby5w8f/image/upload/v1765864538/Anjali_Pillai_d0ywa4.png',
+  ishika_mahajan: 'https://res.cloudinary.com/dynby5w8f/image/upload/v1765864693/Ishika_Mahajan_tjcepx.jpg',
+  aastha_yagnik: 'https://res.cloudinary.com/dynby5w8f/image/upload/v1765864521/Aastha_Yagnik_hyaynu.jpg',
+  indrayani_hinge: 'https://res.cloudinary.com/dynby5w8f/image/upload/v1765864527/Indrayani_Hinge_o6kqe5.png',
+  ambika_vaidya: 'https://res.cloudinary.com/dynby5w8f/image/upload/v1765864525/Ambika_Vaidya_a3e7le.jpg',
+  muskan_negi: 'https://res.cloudinary.com/dynby5w8f/image/upload/v1765864521/Muskan_Negi_rlql2d.jpg',
 };

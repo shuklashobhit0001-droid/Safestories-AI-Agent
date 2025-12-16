@@ -8,7 +8,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: url('https://storage.googleapis.com/safetories-images/3518ee75c9bef26ebb58051ccd7311bff6e24ec0.jpg') no-repeat center center fixed;
+  background: url('https://res.cloudinary.com/dynby5w8f/image/upload/v1765863483/3518ee75c9bef26ebb58051ccd7311bff6e24ec0_pjmabb.jpg') no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -18,7 +18,7 @@ body {
   height: 100vh;
   min-height: 850px;
   margin: 0;
-  background: url('https://storage.googleapis.com/safetories-images/3518ee75c9bef26ebb58051ccd7311bff6e24ec0.jpg') no-repeat center center;
+  background: url('https://res.cloudinary.com/dynby5w8f/image/upload/v1765863483/3518ee75c9bef26ebb58051ccd7311bff6e24ec0_pjmabb.jpg') no-repeat center center;
   background-size: cover;
   overflow-y: auto;
   animation: fadeIn 1.5s ease-in;
@@ -163,7 +163,7 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: url('https://storage.googleapis.com/safetories-images/3518ee75c9bef26ebb58051ccd7311bff6e24ec0.jpg') no-repeat center center;
+  background: url('https://res.cloudinary.com/dynby5w8f/image/upload/v1765863483/3518ee75c9bef26ebb58051ccd7311bff6e24ec0_pjmabb.jpg') no-repeat center center;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -270,7 +270,7 @@ body {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    background: url('https://storage.googleapis.com/safetories-images/3518ee75c9bef26ebb58051ccd7311bff6e24ec0.jpg') no-repeat center center;
+    background: url('https://res.cloudinary.com/dynby5w8f/image/upload/v1765863483/3518ee75c9bef26ebb58051ccd7311bff6e24ec0_pjmabb.jpg') no-repeat center center;
     background-size: cover;
   }
 
