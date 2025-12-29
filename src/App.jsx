@@ -196,7 +196,7 @@ function App() {
               </div>
             </div>
 
-            <div className="therapist-card therapist-inactive disabled">
+            <div className="therapist-card therapist-inactive" onClick={() => window.open('https://aasthayagnik.dayschedule.com/adolescent-therapy-session-with-aastha-yagnik', '_blank')}>
               <div className="therapist-avatar therapist-avatar-alt">
                 <img src={IMAGE_URLS.aastha_yagnik} alt="Aastha Yagnik" style={{width: '100%', height: '100%', borderRadius: '50%', objectFit: 'cover'}} />
               </div>
@@ -206,7 +206,7 @@ function App() {
               </div>
             </div>
 
-            <div className="therapist-card therapist-active disabled">
+            <div className="therapist-card therapist-active" onClick={() => window.open('https://indrayani.dayschedule.com/adolescent-therapy-session-with-indrayani-hinge', '_blank')}>
               <div className="therapist-avatar">
                 <img src={IMAGE_URLS.indrayani_hinge} alt="Indrayani Hinge" style={{width: '100%', height: '100%', borderRadius: '50%', objectFit: 'cover'}} />
               </div>
@@ -216,22 +216,12 @@ function App() {
               </div>
             </div>
 
-            <div className="therapist-card therapist-active disabled">
+            <div className="therapist-card therapist-active" onClick={() => window.open('https://ambika.dayschedule.com/adolescent-therapy-session-with-ambika', '_blank')}>
               <div className="therapist-avatar">
                 <img src={IMAGE_URLS.ambika_vaidya} alt="Ambika Vaidya" style={{width: '100%', height: '100%', borderRadius: '50%', objectFit: 'cover'}} />
               </div>
               <div className="therapist-info">
                 <h3>Ambika Vaidya</h3>
-                <p>Jr. Psychologist | Online & In-person (Pune only) | ₹1200/session</p>
-              </div>
-            </div>
-
-            <div className="therapist-card therapist-inactive disabled">
-              <div className="therapist-avatar therapist-avatar-alt">
-                <img src={IMAGE_URLS.muskan_negi} alt="Muskan Negi" style={{width: '100%', height: '100%', borderRadius: '50%', objectFit: 'cover'}} />
-              </div>
-              <div className="therapist-info">
-                <h3>Muskan Negi</h3>
                 <p>Jr. Psychologist | Online & In-person (Pune only) | ₹1200/session</p>
               </div>
             </div>
@@ -286,7 +276,7 @@ function App() {
               </div>
             </div>
 
-            <div className="therapist-card therapist-inactive disabled">
+            <div className="therapist-card therapist-inactive" onClick={() => window.open('https://aasthayagnik.dayschedule.com/individual-therapy-session-with-aastha-yagnik', '_blank')}>
               <div className="therapist-avatar therapist-avatar-alt">
                 <img src={IMAGE_URLS.aastha_yagnik} alt="Aastha Yagnik" style={{width: '100%', height: '100%', borderRadius: '50%', objectFit: 'cover'}} />
               </div>
@@ -296,7 +286,7 @@ function App() {
               </div>
             </div>
 
-            <div className="therapist-card therapist-active disabled">
+            <div className="therapist-card therapist-active" onClick={() => window.open('https://indrayani.dayschedule.com/individual-therapy-session-with-indrayani-hinge', '_blank')}>
               <div className="therapist-avatar">
                 <img src={IMAGE_URLS.indrayani_hinge} alt="Indrayani Hinge" style={{width: '100%', height: '100%', borderRadius: '50%', objectFit: 'cover'}} />
               </div>
@@ -306,7 +296,7 @@ function App() {
               </div>
             </div>
 
-            <div className="therapist-card therapist-active disabled">
+            <div className="therapist-card therapist-active" onClick={() => window.open('https://ambika.dayschedule.com/individual-therapy-session-with-ambika', '_blank')}>
               <div className="therapist-avatar">
                 <img src={IMAGE_URLS.ambika_vaidya} alt="Ambika Vaidya" style={{width: '100%', height: '100%', borderRadius: '50%', objectFit: 'cover'}} />
               </div>
@@ -316,7 +306,7 @@ function App() {
               </div>
             </div>
 
-            <div className="therapist-card therapist-inactive disabled">
+            <div className="therapist-card therapist-inactive" onClick={() => window.open('https://muskannegi.dayschedule.com/individual-therapy-session-with-muskan-negi', '_blank')}>
               <div className="therapist-avatar therapist-avatar-alt">
                 <img src={IMAGE_URLS.muskan_negi} alt="Muskan Negi" style={{width: '100%', height: '100%', borderRadius: '50%', objectFit: 'cover'}} />
               </div>
