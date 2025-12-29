@@ -4,7 +4,7 @@ import { useConversation } from '@elevenlabs/react'
 import { IMAGE_URLS } from './imageConfig'
 
 function App() {
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(true)
   const [fadeOut, setFadeOut] = useState(false)
   const [showScheduleModal, setShowScheduleModal] = useState(false)
   const [showIndividualModal, setShowIndividualModal] = useState(false)
@@ -62,7 +62,7 @@ function App() {
           if (conversationState === 'idle') {
             try {
               setConversationState('connecting');
-              await conversation.startSession({ agentId: 'agent_9601kbhttzt8exrawcshksct5ka8' });
+              await conversation.startSession({ agentId: 'agent_0701kazhwzywftzbf33rq27eaa36' });
             } catch (error) {
               console.error('Failed to start conversation:', error);
               setConversationState('idle');
