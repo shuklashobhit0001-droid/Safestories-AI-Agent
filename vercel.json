@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/minio/:path*",
+      "destination": "/api/image?path=:path*"
+    }
+  ]
+}
