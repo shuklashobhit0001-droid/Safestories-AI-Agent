@@ -1,12 +1,17 @@
-// Image URLs from Cloudinary
+// Use proxy path in production (Vercel), direct MinIO in local dev
+const MINIO_BASE = import.meta.env.DEV
+  ? 'https://s3.fluidjobs.ai:9002/safestories'
+  : '/minio';
+
 export const IMAGE_URLS = {
-  logo: 'https://fra.cloud.appwrite.io/v1/storage/buckets/694e2aae0004e2dea506/files/694e2b8300040ce6e0e1/view?project=694e24b70009052f7027&mode=admin',
-  door: 'https://fra.cloud.appwrite.io/v1/storage/buckets/694e2aae0004e2dea506/files/694e4b710031e25830f5/view?project=694e24b70009052f7027&mode=admin',
-  loader: 'https://fra.cloud.appwrite.io/v1/storage/buckets/694e2aae0004e2dea506/files/694e2b3b000fb02ad077/view?project=694e24b70009052f7027&mode=admin',
-  anjali_pillai: 'https://fra.cloud.appwrite.io/v1/storage/buckets/694e2aae0004e2dea506/files/694e2aee001fa06065d6/view?project=694e24b70009052f7027&mode=admin',
-  ishika_mahajan: 'https://fra.cloud.appwrite.io/v1/storage/buckets/694e2aae0004e2dea506/files/694e2adf0005fd52ab1f/view?project=694e24b70009052f7027&mode=admin',
-  aastha_yagnik: 'https://fra.cloud.appwrite.io/v1/storage/buckets/694e2aae0004e2dea506/files/694e2b640010c69790a9/view?project=694e24b70009052f7027&mode=admin',
-  indrayani_hinge: 'https://fra.cloud.appwrite.io/v1/storage/buckets/694e2aae0004e2dea506/files/694e2b57000645fa20d5/view?project=694e24b70009052f7027&mode=admin',
-  ambika_vaidya: 'https://fra.cloud.appwrite.io/v1/storage/buckets/694e2aae0004e2dea506/files/694e2b420022769fa408/view?project=694e24b70009052f7027&mode=admin',
-  muskan_negi: 'https://fra.cloud.appwrite.io/v1/storage/buckets/694e2aae0004e2dea506/files/694e2b51002bc6331e04/view?project=694e24b70009052f7027&mode=admin',
+  logo: `${MINIO_BASE}/safestories%20logo.png`,
+  door: `${MINIO_BASE}/bluedoor_1_gkkqvv.webp`,
+  loader: `${MINIO_BASE}/Loader%20for%20SafeStories%20Agent.gif`,
+  anjali_pillai: `${MINIO_BASE}/Anjali%20Pillai.png`,
+  ishika_mahajan: `${MINIO_BASE}/Ishika%20Mahajan.png`,
+  aastha_yagnik: `${MINIO_BASE}/Aastha%20Yagnik.jpeg`,
+  indrayani_hinge: `${MINIO_BASE}/Indrayani%20Hinge.png`,
+  ambika_vaidya: `${MINIO_BASE}/Ambika%20Vaidya.jpeg`,
+  muskan_negi: `${MINIO_BASE}/Muskan%20Negi.jpg`,
+  background: `${MINIO_BASE}/3518ee75c9bef26ebb58051ccd7311bff6e24ec0.jpg`,
 };
