@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/minio/:path*",
-      "destination": "https://s3.fluidjobs.ai:9002/safestories/:path*"
+      "destination": "/api/image?path=:path*"
     }
   ]
 }
