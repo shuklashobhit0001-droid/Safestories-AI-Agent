@@ -176,7 +176,7 @@ function App() {
           <div className="modal-content modal-therapists" onClick={(e) => e.stopPropagation()}>
             <h2 className="modal-title-center">Adolescent Therapy (13+)</h2>
             
-            <div className="therapist-card therapist-active" onClick={() => window.open('https://anjalipillai.dayschedule.com/adolescent-therapy-session-with-anjali', '_blank')}>
+            <div className="therapist-card therapist-active" onClick={() => window.open('https://safestories-dashboard.vercel.app/book/adolescent-therapy-anjali', '_blank')}>
               <div className="therapist-avatar">
                 <img src={IMAGE_URLS.anjali_pillai} alt="Anjali Pillai" style={{width: '100%', height: '100%', borderRadius: '50%', objectFit: 'cover'}} />
               </div>
@@ -186,7 +186,7 @@ function App() {
               </div>
             </div>
 
-            <div className="therapist-card therapist-inactive" onClick={() => window.open('https://ishika.dayschedule.com/adolescent-session-ishika', '_blank')}>
+            <div className="therapist-card therapist-inactive" onClick={() => window.open('https://safestories-dashboard.vercel.app/book/adolescent-session-ishika', '_blank')}>
               <div className="therapist-avatar therapist-avatar-alt">
                 <img src={IMAGE_URLS.ishika_mahajan} alt="Ishika Mahajan" style={{width: '100%', height: '100%', borderRadius: '50%', objectFit: 'cover'}} />
               </div>
@@ -196,7 +196,7 @@ function App() {
               </div>
             </div>
 
-            <div className="therapist-card therapist-inactive" onClick={() => window.open('https://aasthayagnik.dayschedule.com/adolescent-therapy-session-with-aastha-yagnik', '_blank')}>
+            <div className="therapist-card therapist-inactive" onClick={() => window.open('https://safestories-dashboard.vercel.app/book/adolescent-therapy-aastha', '_blank')}>
               <div className="therapist-avatar therapist-avatar-alt">
                 <img src={IMAGE_URLS.aastha_yagnik} alt="Aastha Yagnik" style={{width: '100%', height: '100%', borderRadius: '50%', objectFit: 'cover'}} />
               </div>
@@ -206,7 +206,7 @@ function App() {
               </div>
             </div>
 
-            <div className="therapist-card therapist-active" onClick={() => window.open('https://indrayani.dayschedule.com/adolescent-therapy-session-with-indrayani-hinge', '_blank')}>
+            <div className="therapist-card therapist-active" onClick={() => window.open('https://safestories-dashboard.vercel.app/book/adolescent-therapy-indrayani', '_blank')}>
               <div className="therapist-avatar">
                 <img src={IMAGE_URLS.indrayani_hinge} alt="Indrayani Hinge" style={{width: '100%', height: '100%', borderRadius: '50%', objectFit: 'cover'}} />
               </div>
@@ -216,7 +216,7 @@ function App() {
               </div>
             </div>
 
-            <div className="therapist-card therapist-active" onClick={() => window.open('https://ambika.dayschedule.com/adolescent-therapy-session-with-ambika', '_blank')}>
+            <div className="therapist-card therapist-active" onClick={() => window.open('https://safestories-dashboard.vercel.app/book/adolescent-therapy-ambika', '_blank')}>
               <div className="therapist-avatar">
                 <img src={IMAGE_URLS.ambika_vaidya} alt="Ambika Vaidya" style={{width: '100%', height: '100%', borderRadius: '50%', objectFit: 'cover'}} />
               </div>
@@ -236,7 +236,7 @@ function App() {
           <div className="modal-content modal-therapists" onClick={(e) => e.stopPropagation()}>
             <h2 className="modal-title-center">Couples Therapy</h2>
             
-            <div className="therapist-card therapist-single" onClick={() => window.open('https://ishika.dayschedule.com/couple-therapy-ishika', '_blank')}>
+            <div className="therapist-card therapist-single" onClick={() => window.open('https://safestories-dashboard.vercel.app/book/couple-therapy-ishika', '_blank')}>
               <div className="therapist-avatar therapist-avatar-alt">
                 <img src={IMAGE_URLS.ishika_mahajan} alt="Ishika Mahajan" style={{width: '100%', height: '100%', borderRadius: '50%', objectFit: 'cover'}} />
               </div>
@@ -256,7 +256,7 @@ function App() {
           <div className="modal-content modal-therapists" onClick={(e) => e.stopPropagation()}>
             <h2 className="modal-title-center">Individual Therapy (18+)</h2>
             
-            <div className="therapist-card therapist-active" onClick={() => window.open('https://anjalipillai.dayschedule.com/individual-session-with-anjalipillai', '_blank')}>
+            <div className="therapist-card therapist-active" onClick={() => window.open('https://safestories-dashboard.vercel.app/book/individual-session-anjali', '_blank')}>
               <div className="therapist-avatar">
                 <img src={IMAGE_URLS.anjali_pillai} alt="Anjali Pillai" style={{width: '100%', height: '100%', borderRadius: '50%', objectFit: 'cover'}} />
               </div>
@@ -266,7 +266,7 @@ function App() {
               </div>
             </div>
 
-            <div className="therapist-card therapist-inactive" onClick={() => window.open('https://ishika.dayschedule.com/session-with-ishika', '_blank')}>
+            <div className="therapist-card therapist-inactive" onClick={() => window.open('https://safestories-dashboard.vercel.app/book/session-with-ishika', '_blank')}>
               <div className="therapist-avatar therapist-avatar-alt">
                 <img src={IMAGE_URLS.ishika_mahajan} alt="Ishika Mahajan" style={{width: '100%', height: '100%', borderRadius: '50%', objectFit: 'cover'}} />
               </div>
@@ -276,7 +276,7 @@ function App() {
               </div>
             </div>
 
-            <div className="therapist-card therapist-inactive" onClick={() => window.open('https://aasthayagnik.dayschedule.com/individual-therapy-session-with-aastha-yagnik', '_blank')}>
+            <div className="therapist-card therapist-inactive" onClick={() => window.open('https://safestories-dashboard.vercel.app/book/individual-therapy-aastha', '_blank')}>
               <div className="therapist-avatar therapist-avatar-alt">
                 <img src={IMAGE_URLS.aastha_yagnik} alt="Aastha Yagnik" style={{width: '100%', height: '100%', borderRadius: '50%', objectFit: 'cover'}} />
               </div>
@@ -286,7 +286,7 @@ function App() {
               </div>
             </div>
 
-            <div className="therapist-card therapist-active" onClick={() => window.open('https://indrayani.dayschedule.com/individual-therapy-session-with-indrayani-hinge', '_blank')}>
+            <div className="therapist-card therapist-active" onClick={() => window.open('https://safestories-dashboard.vercel.app/book/individual-therapy-indrayani', '_blank')}>
               <div className="therapist-avatar">
                 <img src={IMAGE_URLS.indrayani_hinge} alt="Indrayani Hinge" style={{width: '100%', height: '100%', borderRadius: '50%', objectFit: 'cover'}} />
               </div>
@@ -296,7 +296,7 @@ function App() {
               </div>
             </div>
 
-            <div className="therapist-card therapist-active" onClick={() => window.open('https://ambika.dayschedule.com/individual-therapy-session-with-ambika', '_blank')}>
+            <div className="therapist-card therapist-active" onClick={() => window.open('https://safestories-dashboard.vercel.app/book/individual-therapy-ambika', '_blank')}>
               <div className="therapist-avatar">
                 <img src={IMAGE_URLS.ambika_vaidya} alt="Ambika Vaidya" style={{width: '100%', height: '100%', borderRadius: '50%', objectFit: 'cover'}} />
               </div>
@@ -306,7 +306,7 @@ function App() {
               </div>
             </div>
 
-            <div className="therapist-card therapist-inactive" onClick={() => window.open('https://muskannegi.dayschedule.com/individual-therapy-session-with-muskan-negi', '_blank')}>
+            <div className="therapist-card therapist-inactive" onClick={() => window.open('https://safestories-dashboard.vercel.app/book/individual-therapy-muskan', '_blank')}>
               <div className="therapist-avatar therapist-avatar-alt">
                 <img src={IMAGE_URLS.muskan_negi} alt="Muskan Negi" style={{width: '100%', height: '100%', borderRadius: '50%', objectFit: 'cover'}} />
               </div>
